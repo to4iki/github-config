@@ -1,0 +1,23 @@
+apiVersion: gh-infra/v1
+kind: Repository
+metadata:
+  name: dotfiles
+  owner: to4iki
+
+spec:
+  description: ~/.
+  visibility: public
+  topics:
+    - dotfiles
+
+  features:
+    issues: false
+    projects: false
+    wiki: false
+    discussions: false
+
+  merge_strategy:
+    allow_merge_commit: false
+    allow_squash_merge: true
+    allow_rebase_merge: false
+    auto_delete_head_branches: true

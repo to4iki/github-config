@@ -1,0 +1,26 @@
+apiVersion: gh-infra/v1
+kind: Repository
+metadata:
+  name: mysite
+  owner: to4iki
+
+spec:
+  description: Site for me.
+  homepage: https://to4iki.com/
+  visibility: public
+  topics:
+    - astro
+    - website
+    - blog
+
+  features:
+    issues: true
+    projects: false
+    wiki: false
+    discussions: false
+
+  merge_strategy:
+    allow_merge_commit: false
+    allow_squash_merge: true
+    allow_rebase_merge: false
+    auto_delete_head_branches: true
