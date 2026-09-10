@@ -21,5 +21,5 @@ Applying common files to multiple repositories:
 
 ```sh
 gh infra plan files/
-gh infra appy files/
+gh infra apply files/
 ```
